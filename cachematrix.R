@@ -1,11 +1,9 @@
 
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
+## makeCacheMatrix creates a special matrix that can cache its inverse matrix value
+## cacheSolve solves the matrix and uses cached value when possible
 
 makeCacheMatrix <- function(x = matrix()) {
-	# cached inverse
+	# cached inverse matrix
     m <- NULL
     set <- function(y) {
         x <<- y
